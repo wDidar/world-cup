@@ -1,0 +1,66 @@
+/*-------- Common Styles ---------*/
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+
+body {
+    font-family: 'Edu SA Beginner', cursive;
+}
+
+/* --------------Header---------------- */
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.top-banner {
+    background-color: #161616;
+    width: 1321px;
+    height: 646px;
+    border-radius: 30px;
+    background-image: url(assets/Banner\ Image.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 600px 100%;
+    background-position-x: 690px;
+}
+
+.banner-text {
+    padding: 111px 106px;
+    width: 531px;
+    height: 424px;
+}
+
+.title {
+    color: white;
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.title-info {
+    color: white;
+    font-size: 16px;
+    padding-top: 40px;
+    padding-right: 60px;
+}
+
+.watch {
+    width: 187px;
+    height: 56px;
+    margin-top: 40px;
+    background-color: #DD0000;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+span {
+    padding-right: 20px;
+}
+
+.fa-arrow-right-to-bracket {
+    transition: transform 3s linear;
+}
+
+.watch:hover .fa-arrow-right-to-bracket {
+    transform: rotate(3600deg);
+    transform-origin: center;
+}
