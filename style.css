@@ -3,6 +3,12 @@
 
 body {
     font-family: 'Edu SA Beginner', cursive;
+    margin: 0;
+}
+
+button {
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 600;
 }
 
 /* --------------Header---------------- */
@@ -21,6 +27,8 @@ body {
     background-position: right;
     background-size: 600px 100%;
     background-position-x: 690px;
+    margin-top: 20px;
+    margin-bottom: 130px;
 }
 
 .banner-text {
@@ -63,4 +71,140 @@ span {
 .watch:hover .fa-arrow-right-to-bracket {
     transform: rotate(3600deg);
     transform-origin: center;
+}
+
+/* Blog Section Flex */
+.blog-section {
+    display: flex;
+    justify-content: center;
+}
+
+/*------------------- Navigation ----------------------*/
+
+.nav-box {
+    background-color: #161616;
+    width: 312px;
+    height: 312px;
+    border-radius: 10px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-btn {
+    background-color: white;
+    color: #161616;
+    font-weight: 500;
+    font-size: 20px;
+    width: 252px;
+    height: 50px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selected {
+    background-color: #DD0000;
+    color: azure;
+}
+
+/*-------------------- Blogs ------------------------*/
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 40px;
+}
+
+.blog {
+    width: 312px;
+    height: 362px;
+    border: 1px solid #161616;
+    border-radius: 10px;
+}
+
+.blog img {
+    width: 100%;
+}
+
+.blog-stuff {
+    padding-left: 20px;
+    padding-right: 0;
+}
+
+.transfer {
+    background-color: white;
+    border: 1px solid #161616;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.blog-title {
+    font-size: 18px;
+    width: 272px;
+    height: 54px;
+    margin-bottom: 0;
+}
+
+
+.blog-info {
+    display: flex;
+    justify-content: space-between;
+    width: 143px;
+    height: 26px;
+}
+
+/* -------------------FOOTER----------------- */
+footer {
+    height: 444px;
+    margin-top: 130px;
+    background-color: #161616;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.footerball {
+    color: white;
+    font-size: 40px;
+    margin-top: 130px;
+}
+
+
+hr {
+    width: 1320px;
+    height: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.extra-section {
+    display: flex;
+    justify-content: space-between;
+    width: 898px;
+    height: 50px;
+}
+
+.extra-footer-info {
+    color: white;
+}
+
+
+/*-------------------------- MEDIA QUERIES ------------------------------*/
+@media screen and (min-width:76px) and (max-width:992px) {
+    header {
+        width: 100%;
+    }
+
+    .top-banner {
+        width: 100%;
+        background-color: #DD0000;
+    }
+
 }
