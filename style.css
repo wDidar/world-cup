@@ -24,9 +24,8 @@ button {
     border-radius: 30px;
     background-image: url(assets/Banner\ Image.png);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right bottom;
     background-size: 600px 100%;
-    background-position-x: 690px;
     margin-top: 20px;
     margin-bottom: 130px;
 }
@@ -50,7 +49,7 @@ button {
     padding-right: 60px;
 }
 
-.watch {
+.special-button {
     width: 187px;
     height: 56px;
     margin-top: 40px;
@@ -159,6 +158,10 @@ span {
     height: 26px;
 }
 
+.view {
+    display: none;
+}
+
 /* -------------------FOOTER----------------- */
 footer {
     height: 444px;
@@ -197,14 +200,80 @@ hr {
 
 
 /*-------------------------- MEDIA QUERIES ------------------------------*/
-@media screen and (min-width:76px) and (max-width:992px) {
-    header {
-        width: 100%;
-    }
+@media screen and (min-width:768px) and (max-width:992px) {
 
+    /*---------- BANNER ----------*/
     .top-banner {
+        height: auto;
         width: 100%;
-        background-color: #DD0000;
+        background-size: 40%;
+        margin: 50px;
     }
 
+    .banner-text {
+        padding: 50px;
+        width: auto;
+        height: auto;
+    }
+
+    .title {
+        font-size: 3em;
+        width: 50%;
+    }
+
+    .title-info {
+        width: 50%;
+    }
+
+    /*----------- BLOG SECTION --------------*/
+    .blog-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-box {
+        width: 100%;
+        background-color: white;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    .nav-btn {
+        border: 1px solid #161616;
+        width: 30%;
+    }
+
+    .blogs {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+
+    .blog {
+        width: 80%;
+    }
+
+
+    .view {
+        display: block;
+    }
+
+    /*------------- FOOTER ----------*/
+    footer {
+        height: 300px;
+    }
+
+    .footerball {
+        margin-top: 90px;
+    }
+
+    hr {
+        width: 90%;
+    }
+
+    .extra-section {
+        width: 90%;
+    }
 }
