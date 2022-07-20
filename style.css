@@ -198,9 +198,39 @@ hr {
     color: white;
 }
 
+.social {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.social-icons {
+    font-size: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fa-instagram {
+    background-image: linear-gradient(#405DE6, #5851D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+    border-radius: 10px;
+    padding: 0 4px;
+}
+
+.fa-facebook-square {
+    color: #1877F2;
+}
+
+.fa-discord {
+    color: #5865F2;
+}
 
 /*-------------------------- MEDIA QUERIES ------------------------------*/
-@media screen and (min-width:768px) and (max-width:992px) {
+
+/* Tablet */
+@media screen and (min-width:769px) and (max-width:992px) {
 
     /*---------- BANNER ----------*/
     .top-banner {
@@ -277,3 +307,7 @@ hr {
         width: 90%;
     }
 }
+
+
+/* Mobile */
+@media screen and(min-width:576px) and(max-width:768px) {}
