@@ -211,12 +211,13 @@ hr {
 
 a {
     text-decoration: none;
+    color: black;
+    font-weight: 700;
 }
 
 .fa-instagram {
     background-image: linear-gradient(#405DE6, #5851D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
     border-radius: 10px;
-    padding: 0 4px;
 }
 
 .fa-facebook-square {
@@ -230,7 +231,7 @@ a {
 /*-------------------------- MEDIA QUERIES ------------------------------*/
 
 /* Tablet */
-@media screen and (min-width:769px) and (max-width:992px) {
+@media screen and (min-width:768px) and (max-width:992px) {
 
     /*---------- BANNER ----------*/
     .top-banner {
@@ -292,7 +293,7 @@ a {
 
     /*------------- FOOTER ----------*/
     footer {
-        height: 300px;
+        height: 350px;
     }
 
     .footerball {
@@ -308,6 +309,95 @@ a {
     }
 }
 
+.social-icons {
+    font-size: 30px;
+}
+
+.fa-instagram {
+    padding: 3px;
+    padding-bottom: 0;
+    padding-right: 5px;
+}
 
 /* Mobile */
-@media screen and(min-width:576px) and(max-width:768px) {}
+@media screen and (max-width:688px) {
+
+    /* BANNER */
+    .top-banner {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        background-size: 20%;
+        background-position: bottom;
+        background-size: 80%;
+    }
+
+    .banner-text {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 3em;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .title-info {
+        text-align: center;
+        padding: 0;
+        padding-top: 50px;
+        width: 90%;
+        height: 60px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .watch {
+        margin: 0;
+    }
+
+    /* BLOG SECTION */
+    .blog-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-box {
+        background-color: white;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .blogs {
+        grid-template-columns: 1fr;
+    }
+
+    /* FOOTER */
+    footer {
+        height: 520px;
+    }
+
+    hr {
+        width: 90%;
+    }
+
+    .extra-section {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        display: contents;
+    }
+
+    .extra-footer-info {
+        margin: 10px;
+    }
+
+    .social {
+        margin: 0;
+    }
+}
